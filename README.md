@@ -10,19 +10,25 @@
 <script src="jquery.copy.js"></script>
 ```
 
-Use like this:
+For string:
 
 ```
 var res = $.copy("Hello, world!");
 ```
 
-or
+For jQuery object:
 
 ```
 var res = $.copy($("#divContent"));
 ```
 
-or
+For string:
+
+```
+<a href="javascript:void(0);" onclick="copyText('By_syk@163.com')">By_syk@163.com</a>
+```
+
+For DOM node:
 
 ```
 <a href="javascript:void(0);" onclick="copyText(this)">By_syk@163.com</a>
