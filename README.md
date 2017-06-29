@@ -10,29 +10,33 @@
 <script src="jquery.copy.js"></script>
 ```
 
-For string:
++ Via jQuery
+  
+  for string:
 
-```
-var res = $.copy("Hello, world!");
-```
+  ```
+  var res = $.copy("Hello, world!");
+  ```
 
-For jQuery object:
+  for jQuery object:
 
-```
-var res = $.copy($("#divContent"));
-```
+  ```
+  var res = $.copy($("#divContent"));
+  ```
 
-For string:
++ Or via function
 
-```
-<a href="javascript:void(0);" onclick="copyText('By_syk@163.com')">By_syk@163.com</a>
-```
+  for string:
 
-For DOM node:
+  ```
+  <a href="javascript:void(0);" onclick="copyText('By_syk@163.com')">By_syk@163.com</a>
+  ```
 
-```
-<a href="javascript:void(0);" onclick="copyText(this)">By_syk@163.com</a>
-```
+  for DOM node:
+
+  ```
+  <a href="javascript:void(0);" onclick="copyText(this)">By_syk@163.com</a>
+  ```
 
 
 ### Compatible
