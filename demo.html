@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+  Copyright 2017 By_syk
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<html>
+<head>
+<title>jQuery Copy Plugin Demo</title>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="jquery.copy.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#btCopyTitle").click(function() {
+    var res = $.copy($("h3").text());
+    $("#status").text(res);
+  });
+  $("#btCopyContent").click(function() {
+    var res = $.copy($("p"));
+    $("#status").text(res);
+  });
+});
+</script>
+</head>
+<body>
+  <h3>What is jQuery?</h3>
+  <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+  <button type="button" id="btCopyTitle">Copy title</button>
+  <button type="button" id="btCopyContent">Copy content</button>
+  <span id="status"></span>
+</body>
+</html>
