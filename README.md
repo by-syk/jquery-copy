@@ -1,4 +1,6 @@
-# jQuery Copy Plugin
+# jquery.copy.js - jQuery Copy Plugin
+
+[![Download](https://img.shields.io/badge/Download-jquery.copy.js-brightgreen.svg)](https://github.com/by-syk/jquery-copy/raw/master/jquery.copy.js)
 
 
 ### Usage
@@ -18,6 +20,11 @@ $(document).ready(function() {
 ### Compatible
 
 Almost all modern browsers are supported.
+
+
+### Sites using jquery.copy.js
+
+[http://nano.by-syk.com](http://nano.by-syk.com/page/base)
 
 
 ### License
