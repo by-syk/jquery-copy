@@ -8,12 +8,24 @@
 ```javascript
 <script src="jquery.js"></script>
 <script src="jquery.copy.js"></script>
-<script>
-$(document).ready(function() {
-  var res = $.copy("Hello, world!");
-  res = $.copy($("#divContent"));
-});
-</script>
+```
+
+Use like this:
+
+```
+var res = $.copy("Hello, world!");
+```
+
+or
+
+```
+var res = $.copy($("#divContent"));
+```
+
+or
+
+```
+<a href="javascript:void(0);" onclick="copyText(this)">By_syk@163.com</a>
 ```
 
 
