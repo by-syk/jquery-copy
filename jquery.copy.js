@@ -21,6 +21,9 @@ function copyText(obj) {
   if (typeof(obj) == 'string') {
     text = obj;
   } else {
+    if (obj.nodeType) { // DOM node
+      obj = $(obj); // to jQuery object
+    }
     text = obj.text();
     if (!text) { // Maybe <textarea />
       text = obj.val();
