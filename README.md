@@ -3,7 +3,7 @@
 
 ### Usage
 
-```
+```javascript
 <script src="jquery.js"></script>
 <script src="jquery.copy.js"></script>
 <script>
@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 ### Compatible
 
-Almost all mordern browsers are supported.
+Almost all modern browsers are supported.
 
 
 ### License
