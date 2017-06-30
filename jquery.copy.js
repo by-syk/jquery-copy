@@ -1,5 +1,5 @@
 /*!
- * jQuery Copy Plugin v1.0.0
+ * jQuery Copy Plugin v1.1.0
  * https://github.com/by-syk/jquery-copy
  *
  * Copyright 2017 By_syk
@@ -18,16 +18,20 @@ function copyText(obj) {
     return false;
   }
   var text;
-  if (typeof(obj) == 'string' || typeof(obj) == 'number') {
-    text = obj;
-  } else {
+  if (typeof(obj) == 'object') {
     if (obj.nodeType) { // DOM node
       obj = $(obj); // to jQuery object
     }
-    text = obj.text();
-    if (!text) { // Maybe <textarea />
-      text = obj.val();
+    try {
+      text = obj.text();
+      if (!text) { // Maybe <textarea />
+        text = obj.val();
+      }
+    } catch (err) { // as JSON
+      text = JSON.stringify(obj);
     }
+  } else {
+    text = obj;
   }
   //var $temp = $('<input>'); // Line feed is not supported
   var $temp = $('<textarea>');

@@ -12,10 +12,14 @@
 
 + Via jQuery
   
-  for string:
+  for content:
 
   ```
   var res = $.copy("Hello, world!");
+  var res = $.copy(999);
+  var res = $.copy(true);
+  var res = $.copy([1, 2, 3]);
+  var res = $.copy({"status": 0, "data": []});
   ```
 
   for jQuery object:
@@ -26,7 +30,7 @@
 
 + Or via function
 
-  for string:
+  for content:
 
   ```
   <a href="javascript:void(0);" onclick="copyText('By_syk@163.com')">By_syk@163.com</a>
