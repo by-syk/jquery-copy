@@ -18,7 +18,7 @@ function copyText(obj) {
     return false;
   }
   var text;
-  if (typeof(obj) == 'string') {
+  if (typeof(obj) == 'string' || typeof(obj) == 'number') {
     text = obj;
   } else {
     if (obj.nodeType) { // DOM node
